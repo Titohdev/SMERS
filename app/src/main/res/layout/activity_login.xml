@@ -1,38 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBack"
+    android:gravity="center"
     tools:context=".Login">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="@string/username"
-        android:textSize="30sp"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:padding="5dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/roundtext"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="@string/password"
-        android:textSize="30sp"
-        android:layout_marginTop="300dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="35dp"
+        android:padding="5dp"
         android:background="@drawable/roundtext"
         />
+
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:text="@string/login"
-        android:textSize="25sp"
-        android:layout_marginTop="400dp"
         android:background="@drawable/roundtext"
-        android:layout_marginLeft="100dp"/>
-</RelativeLayout>
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textSize="15sp" />
+</LinearLayout>
